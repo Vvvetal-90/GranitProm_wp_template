@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<div id="content" class="container site-content">
+	<main class="container site-content">
 
 		<?php
 		if ( have_posts() ) :
@@ -44,7 +44,7 @@ get_header(); ?>
 
 		endif; ?>
 
-	</div><!-- #content -->
+	</main><!-- .content -->
 
 <?php
 

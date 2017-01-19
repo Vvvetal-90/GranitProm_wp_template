@@ -14,8 +14,12 @@
 
 get_header(); ?>
 
-	<div id="content" class="container site-content">
-
+	<main class="container site-content">
+		<div class="row breadcrumbs">
+			<div class="col-md-12 ">
+				<?php do_action('icl_navigation_breadcrumb', ['separator']); ?>
+			</div><!-- /.col-md-12 -->
+		</div><!-- /.row -->
 		<?php
 		while ( have_posts() ) : the_post();
 
@@ -29,7 +33,7 @@ get_header(); ?>
 		endwhile; // End of the loop.
 		?>
 
-	</div><!-- #content -->
+	</main><!-- .content -->
 
 <?php
 

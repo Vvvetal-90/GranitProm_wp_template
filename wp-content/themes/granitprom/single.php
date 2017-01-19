@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="content" class="container site-content">
+	<main class="container site-content">
 
 		<?php
 		while ( have_posts() ) : the_post();
@@ -26,7 +26,7 @@ get_header(); ?>
 		endwhile; // End of the loop.
 		?>
 
-	</div><!-- #content -->
+	</main><!-- .content -->
 
 <?php
 

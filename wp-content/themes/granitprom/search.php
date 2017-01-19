@@ -42,5 +42,5 @@ get_header(); ?>
 	</div><!-- #content -->
 
 <?php
-get_sidebar();
+
 get_footer();

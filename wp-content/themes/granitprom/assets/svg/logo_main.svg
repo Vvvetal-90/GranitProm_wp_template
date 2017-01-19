@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="533.25"
+   height="270.45419"
+   viewBox="0 0 141.08906 71.557674"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.0 r15299"
+   sodipodi:docname="logo_main.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="325.16248"
+     inkscape:cy="63.010232"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1411"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showborder="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.56258612,-0.6589706)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#159fef;fill-opacity:0.94117647;stroke:none;stroke-width:0.26458332"
+       x="36.096725"
+       y="142.62035"
+       id="text4506"><tspan
+         sodipodi:role="line"
+         id="tspan4504"
+         x="36.096725"
+         y="148.96855"
+         style="fill:#159fef;fill-opacity:0.94117647;stroke-width:0.26458332" /></text>
+    <path
+       style="fill:#169fef;fill-opacity:0.94117647;stroke-width:1.0415864"
+       d="m 44.286225,38.082428 0.306028,-7.5515 4.426739,-0.98124 4.42674,-0.98123 0.0188,-10.47622 0.0188,-10.4762099 4.18874,-3.4785295 4.18873,-3.478528 1.78161,1.337587 c 0.97989,0.735672 3.77365,3.2188509 6.20836,5.5181705 l 4.426751,4.1805899 v 4.96705 4.96705 l 2.60397,1.70619 2.60399,1.70618 v 9.25449 9.25448 h 9.37429 9.374269 v 1.04159 1.04158 H 71.107072 43.980197 Z m 25.824897,-5.98912 c 0,-6.87447 -0.21231,-12.49904 -0.47179,-12.49904 -0.25948,0 -1.66562,0.54395 -3.12476,1.20878 l -2.65297,1.20878 v 11.29026 11.29026 h 3.12476 3.12476 z m -19.79014,4.7207 v -6.73674 l -2.343573,0.86229 -2.34357,0.8623 -0.312375,5.87445 -0.312376,5.87445 h 2.655945 2.655949 z m 11.95941,-9.14744 c 0.39671,-8.73631 0.56324,-18.1229899 0.37006,-20.8593099 l -0.35123,-4.9751075 -3.97243,3.282968 -3.97244,3.2829695 0.2578,10.4327699 0.25779,10.43278 1.89187,0.49473 1.89186,0.49473 v 6.64883 6.64883 h 1.45271 1.45272 z"
+       id="path21"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sccccccsccccccccccccccssccccccsccsccccccsssccccccccccscs" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:25.39999962px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#159fef;fill-opacity:0.94117647;stroke:none;stroke-width:0.26458332"
+       x="-0.8636834"
+       y="71.832169"
+       id="text4523"><tspan
+         sodipodi:role="line"
+         id="tspan4521"
+         x="-0.8636834"
+         y="71.832169"
+         style="fill:#159fef;fill-opacity:0.94117647;stroke-width:0.26458332">GranitProm</tspan></text>
+  </g>
+</svg>

@@ -10,15 +10,6 @@
  */
 
 ?>
-	<!-- <div id="content" class="container site-content">
-	
-		<div class="row">
-			<div class="col-md-12 content-start">
-			
-			</div>/.col-md-12
-		</div>/.row
-	
-	</div>/.container.site-content -->
 
 	<footer class="footer">
 		<div class="footer-widget" role="contentinfo">

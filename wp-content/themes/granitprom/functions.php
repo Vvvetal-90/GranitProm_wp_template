@@ -108,5 +108,21 @@ function granitprom_widgets_init() {
 }
 add_action( 'widgets_init', 'granitprom_widgets_init' );
 
-
+/* Add the following code in the theme's functions.php and disable any unset function as required */
+function remove_default_image_sizes( $sizes ) {
+  
+  /* Default WordPress */
+//  unset( $sizes[ 'medium' ]);          // Remove Thumbnail (150 x 150 hard cropped)
+//  unset( $sizes[ 'medium' ]);          // Remove Medium resolution (300 x 300 max height 300px)
+  unset( $sizes[ 'medium_large' ]);    // Remove Medium Large (added in WP 4.4) resolution (768 x 0 infinite height)
+  unset( $sizes[ 'large' ]);           // Remove Large resolution (1024 x 1024 max height 1024px)
+  
+  /* With WooCommerce */
+/*  unset( $sizes[ 'shop_thumbnail' ]);  // Remove Shop thumbnail (180 x 180 hard cropped)
+  unset( $sizes[ 'shop_catalog' ]);    // Remove Shop catalog (300 x 300 hard cropped)
+  unset( $sizes[ 'shop_single' ]);     // Shop single (600 x 600 hard cropped)*/
+  
+  return $sizes;
+}
+add_filter( 'intermediate_image_sizes_advanced', 'remove_default_image_sizes' );
 
