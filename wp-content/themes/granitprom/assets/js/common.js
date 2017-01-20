@@ -1,4 +1,4 @@
-$(function() {
+jQuery(document).ready(function($) {
 	"use strict"
 	//-------------------------- navbar main menu----------------
 	$('#main-menu').on('click',function(e){

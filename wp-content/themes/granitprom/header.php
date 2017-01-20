@@ -81,6 +81,9 @@
 				<div id="callus" class="modal_div"> <!-- #modal_id -->
 					<span class="modal_close"><i class="fa fa-times" aria-hidden="true"></i></span>
 					<!-- here modal content -->
+					<?php
+					if ( function_exists("add_formcraft_form") ) { add_formcraft_form("[fc id='1'][/fc]"); }
+					?>
 				</div>
 				<a href="#callus" class="button_gp call-us open_modal">Перезвонить</a><!-- link with #modal_id-->
 			</div><!-- /.header-top-conactInfo -->
@@ -93,3 +96,4 @@
 		</nav><!-- /.navbar -->
 		<div id="overlay"></div><!-- overlay single by page -->
 	</header><!-- /.header --> 
+	<?php if (function_exists("add_formcraft_form")) { add_formcraft_form("[fc id='1' type='popup' placement='left']Click Me[/fc]"); } ?>
