@@ -564,6 +564,5 @@ class Yoast_Notification_Center {
 	 * @deprecated 3.2 remove in 3.5
 	 */
 	public function set_transient() {
-		_deprecated_function( __METHOD__, 'WPSEO 3.2' );
 	}
 }

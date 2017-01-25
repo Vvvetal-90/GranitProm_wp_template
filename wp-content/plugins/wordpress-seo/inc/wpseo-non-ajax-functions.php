@@ -64,7 +64,7 @@ function wpseo_admin_bar_menu() {
 	}
 
 	// Never display notifications for network admin.
-	$counter = $alert_popup = '';
+	$counter = '';
 
 	// Set the top level menu item content for admins and network admins.
 	if ( $user_is_admin_or_networkadmin ) {
@@ -95,16 +95,18 @@ function wpseo_admin_bar_menu() {
 					_n( 'You have a new issue concerning your SEO!', 'You have %d new issues concerning your SEO!', $new_notifications_count, 'wordpress-seo' ),
 					$new_notifications_count
 				);
-				$alert_popup = '<div class="yoast-issue-added">' . $notification . '</div>';
+				$counter .= '<div class="yoast-issue-added">' . $notification . '</div>';
 			}
 		}
 	}
 
-	$title = '<div id="yoast-ab-icon" class="ab-item yoast-logo svg"><span class="screen-reader-text">' . __( 'SEO', 'wordpress-seo' ) . '</span></div>';
+	// Yoast Icon.
+	$icon_svg = WPSEO_Utils::get_icon_svg();
+	$title = '<div id="yoast-ab-icon" class="ab-item yoast-logo svg" style="background-image: url(\''.$icon_svg.'\');"><span class="screen-reader-text">' . __( 'SEO', 'wordpress-seo' ) . '</span></div>';
 
 	$wp_admin_bar->add_menu( array(
 		'id'    => 'wpseo-menu',
-		'title' => $title . $score . $counter . $alert_popup,
+		'title' => $title . $score . $counter,
 		'href'  => $seo_url,
 		'meta'   => array( 'tabindex' => $top_level_link_tabindex ),
 	) );
@@ -301,7 +303,7 @@ function wpseo_admin_bar_menu() {
 		$wp_admin_bar->add_menu( array(
 			'parent' => 'wpseo-settings',
 			'id'     => 'wpseo-licenses',
-			'title'  => __( 'Go Premium', 'wordpress-seo' ),
+			'title' => '<span style="color:#f18500">' . __( 'Go Premium', 'wordpress-seo' ) . '</span>',
 			'href'   => admin_url( 'admin.php?page=wpseo_licenses' ),
 		) );
 	}

@@ -11,45 +11,7 @@ jQuery(document).ready(function($) {
 			$('.navbar').show();
 		}
 	});
-	//-------------------------------PopUp----------------------
-	var overlay = $('#overlay'); // #overlay must be one per page
-  var open_modal = $('.open_modal'); //class for modal links
-  var close = $('.modal_close, #overlay'); // modal close
-  var modal = $('.modal_div'); // all hidden modal windows
-
-   open_modal.click( function(event){ // wait for click open_modal
-       event.preventDefault(); // dissalow standart link event
-       var div = $(this).attr('href'); // take the line with the selector at the clicked link
-       overlay.fadeIn(400, //show overlay
-           function(){ // after the and of overlay showing
-               $(div) // take the line with the selector and make of it an object jquery
-                   .css('display', 'block') 
-                   .animate({opacity: 1, top: '50%'}, 200); // slow animate show
-       });
-   });
-
-   close.click( function(){ // wait for click
-          modal // all modal
-           .animate({opacity: 0, top: '45%'}, 200, // slow hidden
-               function(){ 
-                   $(this).css('display', 'none');
-                   overlay.fadeOut(400); // hide substrate
-               }
-           );
-   });
-   //---close popUp by ESC button
-   $(document).bind('keydown', function(e) { 
-      if (e.which == 27) {
-        modal // all modal
-         .animate({opacity: 0, top: '45%'}, 200, // slow hidden
-             function(){ 
-                 $(this).css('display', 'none');
-                 overlay.fadeOut(400); // hide substrate
-             }
-         );
-      }
-  }); 
-  //End PopUp
+	
   //--------------------Go to Top-----------------------
   $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {

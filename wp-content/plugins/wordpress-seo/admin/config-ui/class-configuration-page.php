@@ -101,53 +101,25 @@ class WPSEO_Configuration_Page {
 		<head>
 			<meta name="viewport" content="width=device-width"/>
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-			<title><?php
-				printf(
-					/* translators: %s expands to Yoast SEO. */
-					__( '%s &rsaquo; Configuration Wizard', 'wordpress-seo' ),
-					'Yoast SEO'
-				);
-			?></title>
+			<title><?php _e( 'Yoast SEO &rsaquo; Configuration Wizard', 'wordpress-seo' ); ?></title>
 			<?php
-			wp_print_head_scripts();
-			wp_print_styles( 'yoast-seo-yoast-components' );
-
-			/**
-			 * Is called before the closing </head> tag in the Yoast Configuration wizard.
-			 *
-			 * Allows users to add their own scripts or styles.
-			 *
-			 * @since 4.0
-			 */
-			do_action( 'wpseo_configuration_wizard_head' );
+				do_action( 'admin_print_styles' );
+				do_action( 'admin_print_scripts' );
+				do_action( 'admin_head' );
 			?>
 		</head>
 		<body class="wp-admin">
 		<div id="wizard"></div>
 		<a class="yoast-wizard-return-link" href="<?php echo $dashboard_url ?>">
-			<?php
-			printf(
-				/* translators: %s expands to Yoast SEO. */
-				__( 'Go back to the %s dashboard.', 'wordpress-seo' ),
-				'Yoast SEO'
-			);
-			?>
+			<?php _e( 'Go back to the Yoast SEO dashboard.', 'wordpress-seo' ); ?>
 		</a>
-		<?php
-			wp_print_media_templates();
-			wp_print_footer_scripts();
-
-			/**
-			 * Is called before the closing </body> tag in the Yoast Configuration wizard.
-			 *
-			 * Allows users to add their own scripts or content.
-			 *
-			 * @since 4.0
-			 */
-			do_action( 'wpseo_configuration_wizard_footer' );
-
+		<footer>
+			<?php
+			do_action( 'admin_print_footer_scripts' );
+			do_action( 'admin_footer' );
 			wp_print_scripts( 'yoast-seo-configuration-wizard' );
-		?>
+			?>
+		</footer>
 		</body>
 		</html>
 		<?php
@@ -185,7 +157,7 @@ class WPSEO_Configuration_Page {
 	 * @returns array The translations for the configuration wizard.
 	 */
 	public function get_translations() {
-		$file = plugin_dir_path( WPSEO_FILE ) . 'languages/yoast-components-' . WPSEO_Utils::get_user_locale() . '.json';
+		$file = plugin_dir_path( WPSEO_FILE ) . 'languages/yoast-components-' . get_locale() . '.json';
 		if ( file_exists( $file ) && $file = file_get_contents( $file ) ) {
 			return json_decode( $file, true );
 		}
