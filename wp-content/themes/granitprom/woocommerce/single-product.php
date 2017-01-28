@@ -31,6 +31,18 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_before_main_content' );
 	?>
+		<!-- Add breadcrumb to woocommerce page -->
+		<?php if ( ! is_front_page() ) : ?>
+
+			<div class="row breadcrumbs">
+				<div class="col-md-12 ">
+					<?php do_action('icl_navigation_breadcrumb', ['separator']); ?>
+				</div><!-- /.col-md-12 -->
+			</div><!-- /.row -->
+
+		<?php endif; ?>
+		<!-- End breadcrumb to woocommerce page -->
+
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

@@ -11,4 +11,48 @@ Text Domain: granitprom
 Tags:  translation-ready, bootstrap, speedoptimized 
 
 */
+html{
+	overflow-y: scroll;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+mark{
+	background-color: transparent;
+}
+/*---------------------------------------------
+------------------FormCraft------------------
+-----------------------------------------------*/
+.fc_modal.fc_fade{
+	overflow: hidden;
+}
+/*---------------------------------------------
+------------------Woocommerse------------------
+-----------------------------------------------*/
+.woocommerce ul.products li.product h3{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.single-product .breadcrumbs{
+	margin-bottom: 1em;
+}
 
+/*-------------------------------------
+----------------Media------------------
+--------------------------------------*/
+
+@media only screen and (max-width : 768px){
+	/*-----------Woocommerse-----------*/
+	.product {
+		margin-top: 1em;
+	}
+	/*-----------FormCraft-----------*/
+	html body .fc-form-modal.fc_modal .fc_modal-dialog .fc_close{
+	margin-top: 6px !important;
+	}
+	html body .fc-form-modal{
+		padding-top: 6%;
+		padding-bottom: 3%;
+	}
+}

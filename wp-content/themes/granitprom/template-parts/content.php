@@ -22,12 +22,14 @@
 
 				if ( 'post' === get_post_type() ) : ?>
 				<div class="entry-meta">
-					<!--  granitprom_posted_on(); -->
+					<!--  granitprom_posted_on(1); -->
 				</div><!-- .entry-meta -->
 				<?php
 				endif; ?>
 			</header><!-- .entry-header -->
-
+			<div class="post_rating">
+				<?php if(function_exists('the_ratings')) { the_ratings(); } ?>
+			</div>
 			<div class="entry-content">
 				<?php
 					the_content( sprintf(

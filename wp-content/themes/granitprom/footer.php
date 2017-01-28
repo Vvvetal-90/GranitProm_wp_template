@@ -33,7 +33,7 @@
 					<p class="copyright-text">
 						<?php printf( esc_html__( 'Copyright © %s', 'granitprom' ), '2017' ); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php printf( esc_html__( '%s', 'granitprom' ), 'GranitProm' ); ?></a>
 					<span class="sep"> | </span>
-					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'granitprom' ), 'GranitProm', '<a href="https://oshchenkov.com/" rel="designer">Oshchenkov</a>' ); ?>
+					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'granitprom' ), 'GranitProm', '<a href="https://oshchenkov.com/" target="_blank" rel="designer">Oshchenkov</a>' ); ?>
 					</p>
 				</div><!-- /.copyright -->
 				<div class="counters">

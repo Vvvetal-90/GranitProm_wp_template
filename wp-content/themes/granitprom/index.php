@@ -15,6 +15,11 @@
 get_header(); ?>
 
 	<main class="container site-content">
+		<div class="row breadcrumbs">
+			<div class="col-md-12 ">
+				<?php do_action('icl_navigation_breadcrumb', ['separator']); ?>
+			</div><!-- /.col-md-12 -->
+		</div><!-- /.row -->
 
 		<?php
 		if ( have_posts() ) :

@@ -107,6 +107,15 @@ function granitprom_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'granitprom_widgets_init' );
+/**
+ * Enqueue scripts and styles.
+ */
+function granitprom_scripts() {
+	wp_enqueue_style( 'granitprom-style', get_stylesheet_uri() );
+
+}
+add_action( 'wp_enqueue_scripts', 'granitprom_scripts' );
+
 
 /* Add the following code in the theme's functions.php and disable any unset function as required */
 function remove_default_image_sizes( $sizes ) {
@@ -126,3 +135,8 @@ function remove_default_image_sizes( $sizes ) {
 }
 add_filter( 'intermediate_image_sizes_advanced', 'remove_default_image_sizes' );
 
+// Remove Woocommerce the breadcrumbs
+add_action( 'init', 'jk_remove_wc_breadcrumbs' );
+function jk_remove_wc_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}

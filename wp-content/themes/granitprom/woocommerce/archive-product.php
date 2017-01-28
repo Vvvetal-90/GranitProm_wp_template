@@ -34,19 +34,21 @@ get_header( 'shop' ); ?>
 
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
+			<!-- Add breadcrumb to woocommerce page -->
+			<?php if ( ! is_front_page() ) : ?>
+
+				<div class="row breadcrumbs">
+					<div class="col-md-12 ">
+						<?php do_action('icl_navigation_breadcrumb', ['separator']); ?>
+					</div><!-- /.col-md-12 -->
+				</div><!-- /.row -->
+
+			<?php endif; ?>
+			<!-- End breadcrumb to woocommerce page -->
+
 			<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 
 		<?php endif; ?>
-
-		<?php
-			/**
-			 * woocommerce_archive_description hook.
-			 *
-			 * @hooked woocommerce_taxonomy_archive_description - 10
-			 * @hooked woocommerce_product_archive_description - 10
-			 */
-			do_action( 'woocommerce_archive_description' );
-		?>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -86,6 +88,16 @@ get_header( 'shop' ); ?>
 			<?php wc_get_template( 'loop/no-products-found.php' ); ?>
 
 		<?php endif; ?>
+		
+		<?php
+			/**
+			 * woocommerce_archive_description hook.
+			 *
+			 * @hooked woocommerce_taxonomy_archive_description - 10
+			 * @hooked woocommerce_product_archive_description - 10
+			 */
+			do_action( 'woocommerce_archive_description' );
+		?>
 
 	<?php
 		/**
