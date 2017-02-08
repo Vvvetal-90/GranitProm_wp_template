@@ -134,7 +134,7 @@ class BuyFunction {
             global $product, $woocommerce_loop;
             ?>
 
-            <a class="clickBuyButton button21" href="#" data-productid="<?= $product->id ?>"><?php echo BuyCore::$buyoptions['namebutton']; ?></a>
+            <a class="clickBuyButton button21my button_gp" href="#" data-productid="<?= $product->id ?>"><?php echo BuyCore::$buyoptions['namebutton']; ?></a>
 
             <?php
         }

@@ -45,8 +45,13 @@ get_header( 'shop' ); ?>
 
 			<?php endif; ?>
 			<!-- End breadcrumb to woocommerce page -->
+			<div class="clearfix product_cat_header">
+				<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+				<div class="post_rating">
+					<?php if(function_exists('the_ratings')) { the_ratings(); } ?>
+				</div>
+			</div><!-- /.clearfix -->
 
-			<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 
 		<?php endif; ?>
 

@@ -37,6 +37,92 @@ mark{
 .single-product .breadcrumbs{
 	margin-bottom: 1em;
 }
+form.cart,.woocommerce a.button.add_to_cart_button{
+	display: none;
+}
+.woocommerce ul.products li.product .price,.single-product.woocommerce .related ul.products li.product .price{
+	float: left;
+}
+.woocommerce a.clickBuyButton,.single-product.woocommerce .related a.clickBuyButton{
+	float: right;
+}
+body .woocommerce a.clickBuyButton:hover{
+	box-shadow: none;
+}
+.single-product.woocommerce ul.products li.product .price,.single-product.woocommerce a.clickBuyButton{
+	float: none;
+}
+.single-product.woocommerce a.clickBuyButton{
+	display: inline-block;
+}
+.product_meta{
+	margin: 1em 0;
+}
+.woocommerce ul.products li.product .price{
+	font-size: 1em;
+}
+.product_cat_header h1,.post_header h1,.post_incat_header h2{
+	float: left;
+}
+.product_cat_header .post_rating,.post_header .post_rating,.post_incat_header .post_rating{
+	float: right;
+	margin: 29px 0;
+}
+
+/*-------------------------------------
+----------------Category------------------
+--------------------------------------*/
+.post_incat_header .post_rating{
+	margin: 22px 20px;
+}
+.post_incat_header h2{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.category_post {
+	margin-bottom: 30px;
+}
+.category_post article{
+	border: 1px solid #ccc;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,.2);
+}
+.post_incat_header{
+	background-color: #f2f2f2;
+}
+.category_post .entry-content .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+.category_post .entry-content{
+	margin: 10px 0;
+}
+.category_post .entry-footer,.single-post .entry-footer{
+	background-color: #4c4c4c;
+	padding: 20px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 12px;
+}
+.updated,.screen-reader-text{
+	display: none;
+}
+.cat_thumbnail img{
+	max-width: 300px;
+	display: block;
+	margin: 0 auto;
+}
+/*-------------------------------------
+----------------Other------------------
+--------------------------------------*/
+.single-post .entry-footer{
+	background-color: #ccc;
+}
+/*-------------------------------------
+----------------Single-post------------------
+--------------------------------------*/
+.post_rating img{
+	max-width: 12px;
+}
 
 /*-------------------------------------
 ----------------Media------------------
